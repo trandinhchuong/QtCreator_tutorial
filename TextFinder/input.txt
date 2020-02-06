@@ -1,0 +1,13 @@
+- Ð? g?i hàm x? lý tìm ki?m (Find) khi ngu?i dùng ch?n nút nh?n Find, Qt cung c?p co ch? signal/slot (x? lý s? ki?n event-handler). M?t tín hi?u (signal) s? du?c phát sinh (emit) khi m?t s? ki?n x?y ra và slot là m?t hàm s? du?c g?i d? dáp ?ng s? ki?n dó.
+
+- Ð? t?o co ch? signal/slot có th? add t? ch? d? Designer ho?c vi?t mã.
+
+- Qt widgets d?nh nghia các signals và slots có th? add tr?c ti?p trong ch? d? Designer. Ð? thêm slot trong tru?ng h?p c?a nút Find nhu sau:
+
+·        Right-click lên nút Find d? m? context-menu
+
+·        Ch?n Go to Slot > click(), và ch?n OK
+
+- Trong file mã ngu?n textfinder.h s? xu?t hi?n m?t private slot tên là on_findButton_clicked()
+
+và trong file mã ngu?n textfinder.cpp tuong ?ng xu?t hi?n khung c?a hàm TextFinder::on_findButton_clicked().
